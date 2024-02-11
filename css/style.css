@@ -1,0 +1,276 @@
+@charset "utf-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  outline:0;
+  font-family:sans-serif;
+  font-size: 16px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*HERO SECTION*/
+.hero{
+  background-image: url('../images/slider-bg.jpg');
+  background-position: 45% 5%;
+  background-size: 300%;
+  object-fit:cover;
+  background-repeat: no-repeat;
+  height: 580px;
+}
+.hero-text p{
+width:70%;
+}
+
+.hero-text button, .jewellary1-text button , .jewellary2-text button, .jewellary3-text button{
+  color:#FD9C6B;
+  border:1px solid #FD9C6B;
+  padding:10px 30px;
+}
+.hero-text h1{
+  font-size: 35px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*LATEST-PRODUCT SECTION*/
+.latest-product h2{
+font-size: 35px;
+text-align: center;
+font-weight: bold;
+margin-bottom: 40px;
+}
+.gift1 ,.gift2 ,.gift3 ,.gift4 ,.gift5 ,.gift6 ,.gift7 ,.gift8{
+  margin-bottom:20px;
+  padding:20px 20px 0 20px;
+  height: 35%;
+  position: relative;
+}
+.gift1 .neww,.gift2 .neww ,.gift3 .neww, .gift4 .neww, .gift5 .neww, .gift6 .neww, .gift7 .neww, .gift8 .neww{
+  position: absolute;
+  top:20px;
+}
+.giftt{
+  background-color:#EEEEEE;
+}
+.gift1 img ,.gift2 img , .gift3 img, .gift4 img, .gift5 img , .gift6 img , .gift7 img , .gift8 img{
+  width: 50%;
+  height:200px;
+  display: block;
+  object-fit:fill;
+  margin: 0 auto;
+}
+.latest-product span{
+  color: red;
+}
+.latest-product button, .about button, .form-element button{
+  background-color: #FD9C6B;
+  color: white;
+}
+
+/*JEWELLARY SECTION*/
+.jewellary1 , .jewellary2, .jewellary3{
+  position: relative;
+}
+.jewellary1-text {
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+.jewellary2-text{
+  position:absolute;
+  bottom:20px;
+  right:20px;
+}
+.jewellary3-text{
+  position: absolute;
+  bottom:20px;
+  left:20px;
+}
+
+/*BLOG SECTION*/
+.blog1 figcaption, .blog2 figcaption{
+  background-color: #F1F2F3;
+}
+
+.blog1 , .blog2{
+  position: relative;
+}
+.blog1 .date , .blog2 .date{
+  position: absolute;
+  top:175px;
+  left:27px;
+  width:60px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+h1, h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*TESTIMONIAL SECTION*/
+.testimonial img{
+  width:50%;
+  display: block;
+  object-fit: fill;
+  margin: 0 auto;
+  border:8px solid gray; 
+}
+
+.testimonial h3{
+  color: #FD9C6B;
+}
+
+.carousel-control-next, .carousel-control-prev {
+ height:30px;
+ width:30px;
+ position:static;
+ bottom:-20px;
+ margin:5px;
+}
+
+.myControl {
+  display: flex;
+  justify-content:center;
+}
+
+.myControl button{
+  background-color: #FD9C6B;
+  color:white;
+  width:50px;
+  height:50px;
+}
+
+/*FOOTER*/
+.social i{
+  border:1px solid white;
+  padding: 10px;
+}
+.Instagram img{
+  width:50px;
+  background-color: #EEEEEE;
+}
+
+/*hover-effect*/
+.hero-text button:hover, .jewellary1 button:hover, .jewellary2 button:hover, .jewellary3 button:hover{
+  color: #EEEEEE;
+  background-color: #FD9C6B;
+}
+.latest-product-button button:hover, .about button:hover{
+  color: #FD9C6B;
+  background-color: white;
+  border:1px solid #FD9C6B;
+}
+.blog button:hover{
+  background-color: black;
+  color: white;
+}
+
+@media (min-width:768px){
+  .hero{
+  background-image: url('../images/slider-bg.jpg');
+  height:450px;
+  width: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.hero-text h1{
+  width:300px;
+}
+.hero-text p{
+  width:400px;
+}
+.gift8 img{
+  margin-top:23.5px;
+}
+
+.blog1 .date , .blog2 .date{
+  position: absolute;
+  top:200px;
+  left:27px;
+}
+.testimonial img{
+  width:20%;
+}
+
+.form-element{
+  width:80%;
+}
+}
+ @media (min-width:992px){
+  .hero{
+    background-image: url('../images/slider-bg.jpg');
+    height:990px;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  .blog1 .date , .blog2 .date{
+    position: absolute;
+    top:290px;
+    left:27px;
+  }
+}
+
+@media(min-width:1320px){
+  .hero-text{
+    margin-left: 300px;
+    margin-top: 200px;
+  }
+  .hero-text h1{
+    font-size: 48px;
+  }
+  .blog1 img, .blog2 img{
+    width:636px;
+  }
+  .blog1 .date , .blog2 .date{
+    top:430px;
+  }
+}
